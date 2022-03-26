@@ -1,61 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/@imagemarker/use-text-width/dist/umd/index.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@imagemarker/use-text-width/dist/umd/index.js ***!
-  \********************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-(function (global, factory) {
-   true ? factory(exports, __webpack_require__(/*! react */ "./node_modules/react/index.js")) :
-  0;
-}(this, (function (exports, react) { 'use strict';
-
-  const useTextWidth = ({ text, ref, font = '16px Times' }) => {
-      const [width, setWidth] = react.useState(-1);
-      react.useEffect(() => {
-          const getContext = () => {
-              const fragment = document.createDocumentFragment();
-              const canvas = document.createElement('canvas');
-              fragment.appendChild(canvas);
-              return canvas.getContext('2d');
-          };
-          const getTextWidth = (currentText) => {
-              const context = getContext();
-              context.font = font;
-              if (Array.isArray(currentText)) {
-                  return Math.max(...currentText.map((t) => context.measureText(t).width));
-              }
-              else {
-                  const metrics = context.measureText(currentText);
-                  return metrics.width;
-              }
-          };
-          if (ref && ref.current) {
-              const context = getContext();
-              const computedStyles = window.getComputedStyle(ref.current);
-              context.font = computedStyles.font;
-              const metrics = context.measureText(ref.current.textContent);
-              setWidth(metrics.width);
-          }
-          else if (text) {
-              setWidth(getTextWidth(text));
-          }
-      }, [font, text]);
-      return width;
-  };
-
-  exports.useTextWidth = useTextWidth;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
@@ -161,14 +106,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-ticker */ "./node_modules/react-ticker/dist/index.es.js");
 /* harmony import */ var _ticker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ticker.css */ "./src/components/ticker/ticker.css");
 /* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button.css */ "./src/components/ticker/button.css");
-/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @imagemarker/use-text-width */ "./node_modules/@imagemarker/use-text-width/dist/umd/index.js");
-/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _headlines__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./headlines */ "./src/components/ticker/headlines.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _headlines__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./headlines */ "./src/components/ticker/headlines.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
-
+ // import { useTextWidth } from '@imagemarker/use-text-width';
 
 
 
@@ -178,17 +121,16 @@ function NewsTicker() {
   var fullTextWidth = 18525.12890625; // this is async it seems - will be easiest to calculate value of this once when final text file is ready
   // then include as hardcoded var as shown aove
   // this calculation gets offset as a per-character scaled number
+  // const charCount = headlinesText.length;
+  // const charWidth = fullTextWidth / charCount;
 
-  var charCount = _headlines__WEBPACK_IMPORTED_MODULE_5__["default"].length;
-  var charWidth = fullTextWidth / charCount;
   var _speed = 8; // will need to set this as literal time when ticker goes live
   // currently is set to have started 30 seconds ago
   // const startTime = Date.now();
 
-  var startTime = 1648283129044;
-  var timeStamp = Date.now();
+  var startTime = 1648283129044; // const timeStamp = Date.now();
 
-  var _offset = _speed * (timeStamp - startTime) * charWidth * -1;
+  var _offset = Math.random() * fullTextWidth * -1;
 
   console.log("FullTextWidth: " + fullTextWidth);
   console.log("NOW TIME: " + startTime);
@@ -199,10 +141,10 @@ function NewsTicker() {
   }, function () {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "mainTicker"
-    }, _headlines__WEBPACK_IMPORTED_MODULE_5__["default"]));
+    }, _headlines__WEBPACK_IMPORTED_MODULE_4__["default"]));
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "linkButton"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/about"
   }, "About")));
 }
@@ -35496,7 +35438,7 @@ function _setPrototypeOf(o, p) {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
