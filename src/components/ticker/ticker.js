@@ -2,7 +2,7 @@ import React from "react";
 import Ticker from "react-ticker";
 import './ticker.css';
 import './button.css';
-import { useTextWidth } from '@imagemarker/use-text-width';
+// import { useTextWidth } from '@imagemarker/use-text-width';
 import headlinesText from './headlines';
 import {
     Link
@@ -17,8 +17,8 @@ function NewsTicker() {
     // then include as hardcoded var as shown aove
 
     // this calculation gets offset as a per-character scaled number
-    const charCount = headlinesText.length;
-    const charWidth = fullTextWidth / charCount;
+    // const charCount = headlinesText.length;
+    // const charWidth = fullTextWidth / charCount;
 
     const _speed = 8;
 
@@ -27,8 +27,8 @@ function NewsTicker() {
     // const startTime = Date.now();
 const startTime = 1648283129044;
 
-    const timeStamp = Date.now();
-    const _offset = _speed * (timeStamp - startTime) * charWidth * -1;
+    // const timeStamp = Date.now();
+    const _offset = Math.random() * fullTextWidth * -1;
 
     console.log("FullTextWidth: " + fullTextWidth);
     console.log("NOW TIME: " + startTime);
