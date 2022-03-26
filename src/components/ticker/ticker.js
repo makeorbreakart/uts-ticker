@@ -11,8 +11,8 @@ import {
 
 
 function NewsTicker() {
-    const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
-    // const fullTextWidth = 9845793475;
+    // const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
+    const fullTextWidth = 18525.12890625;
     // this is async it seems - will be easiest to calculate value of this once when final text file is ready
     // then include as hardcoded var as shown aove
 
@@ -24,7 +24,8 @@ function NewsTicker() {
 
     // will need to set this as literal time when ticker goes live
     // currently is set to have started 30 seconds ago
-    const startTime = Date.now();
+    // const startTime = Date.now();
+const startTime = 1648283129044;
 
     const timeStamp = Date.now();
     const _offset = _speed * (timeStamp - startTime) * charWidth * -1;
@@ -35,7 +36,7 @@ function NewsTicker() {
     console.log(_offset);
     return (
         <div>
-        <Ticker speed={_speed} offset={0}>
+        <Ticker speed={_speed} offset={_offset}>
             {() => (
                 <>
                     <div className="mainTicker">
