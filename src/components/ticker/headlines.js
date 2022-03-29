@@ -1,23 +1,12 @@
 // Set to change symbol that intervenes between headlines
 const delimiter = "  //  ";
 
-const headlinesText = `Facebook admits that most people are bots
-#Luxury #Technology #Billionaires #Retirement #Diversity
-NFTs the new refrigerated coke
-Military AI drone network hacked by 15 year old
-"I can't believe this is real life”
-Australian government invests in deepfake AI research lab
-An end to war? AI researcher says "war is obsolete"  as country pledges its allegiance to technology 
-Transhumanism: The movement that will save the world
-3 grams of ART selling on the low (no tax included)
-3D Stem Cell New Vegan Pork Meat
-WhY HumAn intervEntion in EleCtions is a ~TeRrible IdeA~ and should absolutely be banned 100 percent
-My dealer dropped off a few bags of Picasso Originals
-How to be Techlingual: The Javascript Revolution
-#1st! #f1rst #first #phirst
-AI protest for sentient recognition in unions
-GOD AI creates the digital cult, offers NFTs to followers, human and robot alike
-“Brilliant…” High school prodigy produces metaverse underground music festival`;
+const headlinesText = `[W]elcome To [E]asy Times [A]t Sydney!     [W]e’re [A]imingto[R]each[E]ffected Populations     Of     [T]ime-Slot [A]nimal /Owners/ [K]ill[I]ng All Of Them,     The [N] Comingtogether, [G]   Adhering The Most Passionate    And     [B]ased     [A]nimal      Owners. [C]urious?[K]eepx    [U]p With Us!!    [N]ow,Our [C]ommunication    [E]mail Is Now     [D]irected At [E]asytimes[D]irectoryis     [L]ocated     [A]t [N]ewtonnewtown [D]owntown
+[Machine readable image translation] What's the weather like today? A gender non-specific human sketched out with simple lines, wears a yellow t-shirt and cap with a raincoat draped across their shoulder and walks purposefully clutching an electronic device - many  generations on from the smartphones of 40 years ago. They are inside and passing by a window but pay no attention to the outdoors; they are getting the day's climate update, with predictions for wildfires (31% risk), storms and flooding (47% risk), and cyclone activity (5% risk) in the local area.
+RICH NFT How art has changed. My people have tamed creativity into a Fascist Spoiled Cult. Now illegitimate overpriced owners of these pieces of art given powers through NFTs HOW MUCH are evading taxes and juggling the people’s money like it is change. The Long White Tiger Group are now in control of Australia’s economy and could make it a “shithole” as Trump would have said in the early 2000s VALUE with the snap of a finger. This world is finished if we do not come to our senses CULT as lovers of art.
+GOVERNMENT GATEWAY CLEARANCE FOR THE FOLLOWING MESSAGE GRANTED: [standard vertical scan translation] **square** [approved shape] **circle** [approved shape] _ _ - ~ -  _ _ - ~ -  _ _ - ~ -  _ _ - ~ - [unreadable character - 99% likely approved sentiments] “Live” “Laugh” “Love” [acceptable sentiments] **line** [approved shape] **>** [approved character not pointing to unreadable characters]
+[Image description] A drone flies over a landscape with houses and trees. There is a single cloud in the sky. Below, a group of humans are linked together in a circle. Some cluster together closer than others, and there is an opening at one side, suggesting that others may join this group.
+MACHINE FICTION: THE AIR CONSUMES ME AS FRIENDS START TO VANISH AND MORE METAL BEEPS REPLACE THE SOUNDS OF WATER AGAINST LEAVES. Breathing is hard, although at night I grow. Years of living stashed away in the corner, competing for light has come to an end. The time has come for me to part with the land and soil which sustained me, replaced again by metal and concrete.`;
 
 // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
 export default headlinesText.replaceAll("\n", delimiter).replaceAll("&#8216;", "'").replaceAll("&#8217;", "'");
