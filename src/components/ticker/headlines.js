@@ -1,12 +1,22 @@
 // Set to change symbol that intervenes between headlines
 const delimiter = "  //  ";
 
-const headlinesText = `[W]elcome To [E]asy Times [A]t Sydney!     [W]e’re [A]imingto[R]each[E]ffected Populations     Of     [T]ime-Slot [A]nimal /Owners/ [K]ill[I]ng All Of Them,     The [N] Comingtogether, [G]   Adhering The Most Passionate    And     [B]ased     [A]nimal      Owners. [C]urious?[K]eepx    [U]p With Us!!    [N]ow,Our [C]ommunication    [E]mail Is Now     [D]irected At [E]asytimes[D]irectoryis     [L]ocated     [A]t [N]ewtonnewtown [D]owntown
-[Machine readable image translation] What's the weather like today? A gender non-specific human sketched out with simple lines, wears a yellow t-shirt and cap with a raincoat draped across their shoulder and walks purposefully clutching an electronic device - many  generations on from the smartphones of 40 years ago. They are inside and passing by a window but pay no attention to the outdoors; they are getting the day's climate update, with predictions for wildfires (31% risk), storms and flooding (47% risk), and cyclone activity (5% risk) in the local area.
-RICH NFT How art has changed. My people have tamed creativity into a Fascist Spoiled Cult. Now illegitimate overpriced owners of these pieces of art given powers through NFTs HOW MUCH are evading taxes and juggling the people’s money like it is change. The Long White Tiger Group are now in control of Australia’s economy and could make it a “shithole” as Trump would have said in the early 2000s VALUE with the snap of a finger. This world is finished if we do not come to our senses CULT as lovers of art.
-GOVERNMENT GATEWAY CLEARANCE FOR THE FOLLOWING MESSAGE GRANTED: [standard vertical scan translation] **square** [approved shape] **circle** [approved shape] _ _ - ~ -  _ _ - ~ -  _ _ - ~ -  _ _ - ~ - [unreadable character - 99% likely approved sentiments] “Live” “Laugh” “Love” [acceptable sentiments] **line** [approved shape] **>** [approved character not pointing to unreadable characters]
-[Image description] A drone flies over a landscape with houses and trees. There is a single cloud in the sky. Below, a group of humans are linked together in a circle. Some cluster together closer than others, and there is an opening at one side, suggesting that others may join this group.
-MACHINE FICTION: THE AIR CONSUMES ME AS FRIENDS START TO VANISH AND MORE METAL BEEPS REPLACE THE SOUNDS OF WATER AGAINST LEAVES. Breathing is hard, although at night I grow. Years of living stashed away in the corner, competing for light has come to an end. The time has come for me to part with the land and soil which sustained me, replaced again by metal and concrete.`;
+const headlinesText = `World's first artificial intelligence based news channel launched
+What did your fox say? Neuralink now has the answers
+AI veto power in UN overturns bill for more employee rights
+Guns banned: that’s it
+Nostalgic Drive: remember when we had countries? And money?
+Govt upload of neural networks fail, ID theft and legal action ensues
+Mars Fashion week: Neo-20s Camp
+A new study has found that more than half of all news headlines are false
+New research into cell decay leads academics to believe age will become ‘socio-economic’
+US military in talks with Amazon over cloud contract worth $10 billion
+Old archives filled with records of corporeal identities discovered to be missing after Nebula server transfer
+Antique cafe with human barista - fake news?
+Video game addiction spirals to 67% of Australian White Collar workers
+South Korea joins US in ban on autonomous weapons after mass hack of military drones
+New study: Does intelligence make you more attractive?
+Politician steals identity from junior staffer`;
 
 // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
 export default headlinesText.replaceAll("\n", delimiter).replaceAll("&#8216;", "'").replaceAll("&#8217;", "'");

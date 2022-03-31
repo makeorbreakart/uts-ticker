@@ -2,7 +2,7 @@ import React from "react";
 import Ticker from "react-ticker";
 import './ticker.css';
 import './button.css';
-import { useTextWidth } from '@imagemarker/use-text-width';
+// import { useTextWidth } from '@imagemarker/use-text-width';
 import headlinesText from './headlines';
 import {
     Link
@@ -11,8 +11,8 @@ import {
 
 
 function NewsTicker() {
-    const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
-    // const fullTextWidth = 18525.12890625;
+    // const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
+    const fullTextWidth = 19551.3515625;
     // this is async it seems - will be easiest to calculate value of this once when final text file is ready
     // then include as hardcoded var as shown aove
 
