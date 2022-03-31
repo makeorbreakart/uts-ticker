@@ -1,61 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/@imagemarker/use-text-width/dist/umd/index.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@imagemarker/use-text-width/dist/umd/index.js ***!
-  \********************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-(function (global, factory) {
-   true ? factory(exports, __webpack_require__(/*! react */ "./node_modules/react/index.js")) :
-  0;
-}(this, (function (exports, react) { 'use strict';
-
-  const useTextWidth = ({ text, ref, font = '16px Times' }) => {
-      const [width, setWidth] = react.useState(-1);
-      react.useEffect(() => {
-          const getContext = () => {
-              const fragment = document.createDocumentFragment();
-              const canvas = document.createElement('canvas');
-              fragment.appendChild(canvas);
-              return canvas.getContext('2d');
-          };
-          const getTextWidth = (currentText) => {
-              const context = getContext();
-              context.font = font;
-              if (Array.isArray(currentText)) {
-                  return Math.max(...currentText.map((t) => context.measureText(t).width));
-              }
-              else {
-                  const metrics = context.measureText(currentText);
-                  return metrics.width;
-              }
-          };
-          if (ref && ref.current) {
-              const context = getContext();
-              const computedStyles = window.getComputedStyle(ref.current);
-              context.font = computedStyles.font;
-              const metrics = context.measureText(ref.current.textContent);
-              setWidth(metrics.width);
-          }
-          else if (text) {
-              setWidth(getTextWidth(text));
-          }
-      }, [font, text]);
-      return width;
-  };
-
-  exports.useTextWidth = useTextWidth;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
@@ -140,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // Set to change symbol that intervenes between headlines
 var delimiter = "  //  ";
-var headlinesText = "[W]elcome To [E]asy Times [A]t Sydney!     [W]e\u2019re [A]imingto[R]each[E]ffected Populations     Of     [T]ime-Slot [A]nimal /Owners/ [K]ill[I]ng All Of Them,     The [N] Comingtogether, [G]   Adhering The Most Passionate    And     [B]ased     [A]nimal      Owners. [C]urious?[K]eepx    [U]p With Us!!    [N]ow,Our [C]ommunication    [E]mail Is Now     [D]irected At [E]asytimes[D]irectoryis     [L]ocated     [A]t [N]ewtonnewtown [D]owntown\n[Machine readable image translation] What's the weather like today? A gender non-specific human sketched out with simple lines, wears a yellow t-shirt and cap with a raincoat draped across their shoulder and walks purposefully clutching an electronic device - many  generations on from the smartphones of 40 years ago. They are inside and passing by a window but pay no attention to the outdoors; they are getting the day's climate update, with predictions for wildfires (31% risk), storms and flooding (47% risk), and cyclone activity (5% risk) in the local area.\nRICH NFT How art has changed. My people have tamed creativity into a Fascist Spoiled Cult. Now illegitimate overpriced owners of these pieces of art given powers through NFTs HOW MUCH are evading taxes and juggling the people\u2019s money like it is change. The Long White Tiger Group are now in control of Australia\u2019s economy and could make it a \u201Cshithole\u201D as Trump would have said in the early 2000s VALUE with the snap of a finger. This world is finished if we do not come to our senses CULT as lovers of art.\nGOVERNMENT GATEWAY CLEARANCE FOR THE FOLLOWING MESSAGE GRANTED: [standard vertical scan translation] **square** [approved shape] **circle** [approved shape] _ _ - ~ -  _ _ - ~ -  _ _ - ~ -  _ _ - ~ - [unreadable character - 99% likely approved sentiments] \u201CLive\u201D \u201CLaugh\u201D \u201CLove\u201D [acceptable sentiments] **line** [approved shape] **>** [approved character not pointing to unreadable characters]\n[Image description] A drone flies over a landscape with houses and trees. There is a single cloud in the sky. Below, a group of humans are linked together in a circle. Some cluster together closer than others, and there is an opening at one side, suggesting that others may join this group.\nMACHINE FICTION: THE AIR CONSUMES ME AS FRIENDS START TO VANISH AND MORE METAL BEEPS REPLACE THE SOUNDS OF WATER AGAINST LEAVES. Breathing is hard, although at night I grow. Years of living stashed away in the corner, competing for light has come to an end. The time has come for me to part with the land and soil which sustained me, replaced again by metal and concrete."; // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
+var headlinesText = "World's first artificial intelligence based news channel launched\nWhat did your fox say? Neuralink now has the answers\nAI veto power in UN overturns bill for more employee rights\nGuns banned: that\u2019s it\nNostalgic Drive: remember when we had countries? And money?\nGovt upload of neural networks fail, ID theft and legal action ensues\nMars Fashion week: Neo-20s Camp\nA new study has found that more than half of all news headlines are false\nNew research into cell decay leads academics to believe age will become \u2018socio-economic\u2019\nUS military in talks with Amazon over cloud contract worth $10 billion\nOld archives filled with records of corporeal identities discovered to be missing after Nebula server transfer\nAntique cafe with human barista - fake news?\nVideo game addiction spirals to 67% of Australian White Collar workers\nSouth Korea joins US in ban on autonomous weapons after mass hack of military drones\nNew study: Does intelligence make you more attractive?\nPolitician steals identity from junior staffer"; // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headlinesText.replaceAll("\n", delimiter).replaceAll("&#8216;", "'").replaceAll("&#8217;", "'"));
 
@@ -161,24 +106,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-ticker */ "./node_modules/react-ticker/dist/index.es.js");
 /* harmony import */ var _ticker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ticker.css */ "./src/components/ticker/ticker.css");
 /* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button.css */ "./src/components/ticker/button.css");
-/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @imagemarker/use-text-width */ "./node_modules/@imagemarker/use-text-width/dist/umd/index.js");
-/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _headlines__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./headlines */ "./src/components/ticker/headlines.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _headlines__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./headlines */ "./src/components/ticker/headlines.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
-
+ // import { useTextWidth } from '@imagemarker/use-text-width';
 
 
 
 
 function NewsTicker() {
-  var fullTextWidth = (0,_imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_4__.useTextWidth)({
-    text: _headlines__WEBPACK_IMPORTED_MODULE_5__["default"],
-    font: '3em monospace'
-  }); // const fullTextWidth = 18525.12890625;
-  // this is async it seems - will be easiest to calculate value of this once when final text file is ready
+  // const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
+  var fullTextWidth = 19551.3515625; // this is async it seems - will be easiest to calculate value of this once when final text file is ready
   // then include as hardcoded var as shown aove
   // this calculation gets offset as a per-character scaled number
   // const charCount = headlinesText.length;
@@ -201,10 +141,10 @@ function NewsTicker() {
   }, function () {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "mainTicker"
-    }, _headlines__WEBPACK_IMPORTED_MODULE_5__["default"]));
+    }, _headlines__WEBPACK_IMPORTED_MODULE_4__["default"]));
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "linkButton"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/about"
   }, "About")));
 }
@@ -35498,7 +35438,7 @@ function _setPrototypeOf(o, p) {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
