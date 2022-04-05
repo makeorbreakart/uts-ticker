@@ -12,7 +12,7 @@ import {
 
 function NewsTicker() {
     // const fullTextWidth = useTextWidth({text: headlinesText, font: '3em monospace'});
-    const fullTextWidth = 19551.3515625;
+    const fullTextWidth = 57989.69140625;
     // this is async it seems - will be easiest to calculate value of this once when final text file is ready
     // then include as hardcoded var as shown aove
 
