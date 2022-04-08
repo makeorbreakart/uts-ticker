@@ -1,11 +1,23 @@
 // Set to change symbol that intervenes between headlines
 const delimiter = "  //  ";
 
-const headlinesText = `THE MICROCHIP SPIKERS: HOW TO PROTECT YOUR BIOMETRIC IDENTITY FROM DIGITAL THIEVES. Estimates suggest over 1.3 million people will have a SNSTR microchip implant by the end of 2063. This is an “access only” chip promising access to accounts, but hacking of the chip is unidentifiable to authorities. The government claims that the chips are an attempt to reduce identity fraud.
-"PEOPLE ARE QUESTIONING THEIR PLACE IN THE WORLD.” It’s unclear whether we’ll be able to go back. Whether it’ll ever be safe to do so, if we return to rebuild if things will destabilise again. My kids have grown up here – they know why everyone moved, but they didn’t experience any of it. Things are far better than they were before, and we’re not the first people to go through something like this, but something feels different – perhaps the scale? Perhaps that the Australian government had no choice but to take us? To accept that it was no longer habitable where we were. When we arrived, First Nations communities helped us adapt to the land and ensure that we knew how to respect it. At first there was no time for questioning, it was survival. But now, we’re settled. We have strong community. And yet, something is missing. This is home, but it’s not quite. 
-ARTIFICIAL INTELLIGENCES DEMAND SENTIENT RECOGNITION IN WORKER UNIONS. A group of AI rights activists are launching a campaign to persuade unions to grant full rights to artificially intelligent workers. They are hoping that their campaign, called ‘Unions For Artificial Intelligence’ (U4AI), will raise awareness. The U4AI campaign consists of a short video and two AI generated websites. “Are robots human?” asks the video, produced by the AI-rights think tank Future Life Institute. “Robots deserve the same rights as all sentient beings.” the statement says. “This is not controversial: sentient beings have the right to protect their well-being and all sentient beings, including AIs, have the right to have their lives respected.”
-UNPACKING THE INTERSTELLAR ELITE AND WHAT THAT MEANS FOR SPACE CAPITALISM – AND YOU. ​​Elon Musk v3.0 and others think we need to worry about this, while others think we should try to stop it. We need to think about the future of automation and change our collective culture to welcome this future and prepare for it. It’s not a time for “agorism,” a term coined by Mike Novogratz that describes the idea that it’s time to make as much money as possible by aligning ourselves with the Elites. I think there will be a lot of money from automation, and as William Gibson has said, “The future is already here, it’s just not Elitely distributed.”
-A STATE POLITICIAN OF 12 YEARS, ALLEGEDLY 37 YEARS OF AGE AND LIVING IN VIRGINIA, HAS BEEN STRIPPED OF HIS TITLE AND DUTIES, AFTER AN UNSCHEDULED IDENTITY THEFT CHECK REVEALED HIS IDENTITY WAS ARTIFICIALLY GENERATED. Generated using thousands of taxpayer dollars, the advanced impersonation system was operated remotely by an unknown person, and has since been abandoned, leaving authorities with little evidence to prosecute. Media coverage after lifting the non-disclosure ban, continues to uncover embarrassing details surrounding the professional foolery of the taxpayer.`;
+const headlinesText = `Mass outage causes thousands of Australian identities to vanish 
+How to hack your own brain
+Scientists discover why cats purr, but they can't tell anyone because it's classified
+The end of privacy as we know it
+What AI Election Bot suits your personality?
+Scientists: we need to stop the AI arms race before it starts
+Elon Musk v3.0 declares war on Martian Republic
+US Congress calls for a ban on autonomous weapons after mass hack of military drones
+China to launch artificial moon to replace streetlights
+Human organ market boom in Japan
+Illegal vape distribution operation busted by AI police forces
+Why is it so hard to make friends in space?
+Unpacking the interstellar elite and what that means for late-term capitalism
+The human brain has been hacked!
+Into the future: plans for interplanetary highway under review
+News Headlines: We're all living in a simulation, but you can't tell because it's a simulation within a simulation
+`;
 
 // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
 export default headlinesText.replaceAll("\n", delimiter).replaceAll("&#8216;", "'").replaceAll("&#8217;", "'");
