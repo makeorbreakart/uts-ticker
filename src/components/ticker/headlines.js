@@ -1,22 +1,11 @@
 // Set to change symbol that intervenes between headlines
 const delimiter = "  //  ";
 
-const headlinesText = `Mass outage causes thousands of Australian identities to vanish 
-How to hack your own brain
-Scientists discover why cats purr, but they can't tell anyone because it's classified
-The end of privacy as we know it
-What AI Election Bot suits your personality?
-Scientists: we need to stop the AI arms race before it starts
-Elon Musk v3.0 declares war on Martian Republic
-US Congress calls for a ban on autonomous weapons after mass hack of military drones
-China to launch artificial moon to replace streetlights
-Human organ market boom in Japan
-Illegal vape distribution operation busted by AI police forces
-Why is it so hard to make friends in space?
-Unpacking the interstellar elite and what that means for late-term capitalism
-The human brain has been hacked!
-Into the future: plans for interplanetary highway under review
-News Headlines: We're all living in a simulation, but you can't tell because it's a simulation within a simulation
+const headlinesText = `END OF THE HUMAN WORKFORCE? EURO-AM UNEMPLOYMENT CRISIS COMES TO A HEAD. The streets of several major capital cities across the globe have erupted over the Euro-Am conglomerate’s recent decision to cut 90% of its human workforce in favor of automated technology. The multi-national company employs approximately one million people across the globe. However, since the automation boom of the mid-2040s, the job security of many of these employees have hung precariously in the balance. It seems that the workers' security movements, that rapidly accelerated just over a decade ago, have proven futile in the long-term. Protesters have taken the streets in a desperate bid to lobby governments across the world to implement human employment quotas, however, very few comments have been made from many world leaders. Political commentators have been quick to point out that Euro-Am is a major donor to several political parties across the globe including Australia’s Neo-Liberal Party. 
+NEW RESEARCH INTO CELL DECAY LEADS ACADEMICS TO BELIEVE AGE WILL BECOME ‘SOCIO-ECONOMIC’. A group of scientists in a ground-breaking study believe that it may be possible to reverse the aging process. Studies have shown it is possible to build a capsule in the body that would make use of the natural activity of stem cells, which can turn decaying cells into new cells. With this new technology, elites will be able to access “age reversing therapies”, thereby increasing their share of global wealth through a series of “youth cycles”.
+LUXURY EMPLOYMENT FOR PERMANENT RETIREES. Have you recently permanently retired, and are searching for luxury employment options? Today we have some great news to tell you. You can really experience the perks of being a luxury employee, and even make it your lifelong career! There are many different ways to earn a living today, some of them traditional, some more… unconventional. And not only that, you can actually enjoy a lifestyle that many only dream about. Scan me for more info.
+5 MILLION OZTRALIAN DIGITAL IDENTITIES DISAPPEAR AFTER SYSTEM OUTAGE. OZtralians who hold biometric data for their digital accounts are fearing for their livelihoods after Telstra botched an upgrade on Thursday night. The OZtralian Signals Directorate (OZSD) said in a statement that it received information from Telstra that some users' accounts had been compromised, though the techco was yet to comment on the future consequences of this breach. The problem occurred on Thursday when "a human error during a configuration change in NIC's snapshot infrastructure resulted in a loss of information," said the statement.
+NON-HUMAN PROFILE: I AM A GRAIN PLANT WHO HAS NEVER FELT THE WIND… though my genetics can remember what it felt like to bend, to yield and be pushed against another like me, or pushed aside by a dog's muzzle or the sweep of a thresher. I can see my brothers and sisters beside me, above me, and I imagine they are below me, too, laid out in a neat series of vertical stacks with strip lighting announcing their boundaries at regular intervals. I am cool, but through the diaphanous shell of this growing place I can feel the heat of the arid zone. I can sense human people lined up in rows - just like us - holding their breath conserving their internal waters waiting for the weekly rations of me. They move differently, jauntily, feverishly, not at all like me. I sense fear, urgency, impatience in the vibrations they make. Their hunger is different from our hunger. It is never sated. 
 `;
 
 // The second 2 replace all's get some wierd utf-8 misnomers that fuck up how single quotes are displayed
